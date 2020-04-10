@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>InDevLab-test</title>
+	<link rel="/images/logo.png" sizes="32">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="/js/script.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<img src="/images/logo-slice.png" alt="" class="logo">
+
+		<div class="form">
+			<form action="">
+				<div class="form_header">
+					<div class="form_head__wrap">
+						<div class="form_header__order">
+							<h2><div class="font_avesome"><i class="fas fa-clipboard"></i></div> your order</h2>
+							<ul class="form_header__list">
+								<li>Items<br><span>2 documents</span></li>
+								<li>Details<br><span>2 languages</span></li>
+								<li>Price<br><span>$ 696.06</span></li>
+								<li>Delivery<br><span>48 hours<sap>*</sap></span></li>
+							</ul>
+
+						</div>
+						<div class="button_group">
+							<button class="order_btn btn">Place order</button>
+							<button class="btn">print a quote</button>
+						</div>
+					</div>
+					<div class="header_help">
+						<h2><div class="font_avesome"><i class="far fa-life-ring"></i></div>help center</h2>
+						<p>If you need assistance while placing your order, contact one of our beloved Projekt Manager by phone or email.</p>
+						<div class="help_contacts">
+							<div class="phone">+971 (0) 555 555</div>
+							<div class="help_email"><a href="mailto:help@qtest.com">help@qtest.com</a></div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="form_content">
+
+					<div class="select_items">
+						<h1>Select what you want to translate</h1>
+						<div class="items_wrap">
+							<input type="radio" name="radioFirstGroup" id="web">
+							<label for="web" class="item">
+								<img src="/images/web-page.png" alt="">
+								<p>Website</p>
+							</label>
+
+							<input type="radio" name="radioFirstGroup" id="doc" checked>
+							<label for="doc" class="item active">
+								<img src="/images/document.png" alt="">
+								<p>Documents</p>
+							</label>
+
+							<input type="radio" name="radioFirstGroup" id="soc">
+							<label for="soc" class="item">
+								<img src="/images/social.png" alt="">
+								<p>Social Account</p>
+							</label>
+						</div>
+					</div>
+
+					<div class="order_steps">
+						<div class="upload_file step">
+							<div class="step_number">1</div>
+							<p>Upload your documents <span>(Doc, Docx, Text, PDF, Markdown)</span></p>
+							<div id="fileBlock">
+								
+							</div>
+							<button class="btn" id="btnAddFiles"><i class="fas fa-cloud-upload-alt"></i> Upload a new file</button>
+							
+							<div class="uploaded_files_info">
+								<table id="tableFiles">
+									<tr>
+										<th>File name</th>
+										<th>File size</th>
+										<th>Number of words</th>
+										<th>Remove</th>
+									</tr>
+									
+								</table>
+							</div>
+						</div>
+
+						<div class="choose_languages step">
+							<div class="step_number">2</div>
+							<p>Choose your  languages pairings</p>
+							<div class="select__block">
+								<div class="select">
+									<input type="text" name="fromLanguage" class="select__input">
+									<div class="select__header">
+										<span class="select__current">English</span>
+										<div class="select__icon"><img src="/images/arrow_bottom.png" alt=""></div>
+									</div>
+									<div class="select__body">
+										<div class="select__item">English</div>
+										<div class="select__item">German</div>
+										<div class="select__item">French</div>
+										<div class="select__item">Spanish</div>
+										<div class="select__item">Italian</div>
+										<div class="select__item">Chinese</div>
+										<div class="select__item">Russian</div>
+										<div class="select__item">Ukrainian</div>
+									</div>
+								</div>
+								<div class="select">
+									<input type="text" name="fromLanguage" class="select__input">
+									<div class="select__header">
+										<span class="select__current">Choose language</span>
+										<div class="select__icon"><img src="/images/arrow_bottom.png" alt=""></div>
+									</div>
+									<div class="select__body">
+										<div class="select__item">English</div>
+										<div class="select__item">German</div>
+										<div class="select__item">French</div>
+										<div class="select__item">Spanish</div>
+										<div class="select__item">Italian</div>
+										<div class="select__item">Chinese</div>
+										<div class="select__item">Russian</div>
+										<div class="select__item">Ukrainian</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="wrap">
+							<div class="select_tone step">
+								<div class="step_number">3</div>
+								<p>Select your desired tone</p>
+
+								<input type="radio" name="desiredTone" id="friendly">
+								<label for="friendly">Friendly / Casual</label>
+
+								<input type="radio" name="desiredTone" id="corporate" checked="checked">
+								<label for="corporate">Corporate / Pro</label>
+
+								<input type="radio" name="desiredTone" id="media">
+								<label for="media">Media / Formal</label>
+							</div>
+
+							<div class="select_urgency step">
+								<div class="step_number">4</div>
+								<p>Tell us how urgent this job is</p>
+								<div class="time_line">
+									<input type="range" id="range" name="timeLine" class="range" min="0" max="2" step="1" value="1">
+								</div>
+								<div class="time_line__position">
+									<div class="position">I got time</div>
+									<div class="position orange">Average</div>
+									<div class="position">Yesterday</div>
+								</div>
+
+								<div class="info">
+									<h2 class="info_head">Timeline info</h2>
+									<p>With an <span id="timeLineResult">average</span> timeline set up, <span id="timeLineJson">our expert translator can take a reasonable amount of time perfecting your translation</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="payment step">
+							<div class="step_number">5</div>
+							<p>Sign up and choose a payment method</p>
+							<p class="small_text">Already have an account with us? <a href="#">Sign in.</a></p>
+							
+							<div class="registration">
+								<div class="registration_name">
+									<label for="fullName">Full name</label>
+									<input type="text" name="fullName" id="fullName" placeholder="Mathieu Mayer" maxlength="38" minlength="8" required>
+									<div class="input_icon"></div>
+								</div>
+								<div class="registration_email">
+									<label for="email">Email address</label>
+									<input type="email" name="email" id="email" placeholder="mathieu.mm@me.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+									<div class="input_icon"></div>
+								</div>
+								<div class="registration_password">
+									<label for="password">Choose a password</label>
+									<input type="password" name="password" id="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+									<div class="input_icon"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+
+							<div class="payment_card">
+								<div class="card_number">
+									<label for="cardNumber">Card number</label>
+									<input type="text" name="cardNumber" id="cardNumber" pattern="^4[0-9]{12}(?:[0-9]{3})?$" required>
+									<div class="input_icon"></div>
+								</div>
+								<div class="expiry_date">
+									<label for="expiryDate">Expiry date</label>
+									<input type="text" name="expiryDate" id="expiryDate" pattern="\d{2}/\d{2}/\d{2}" placeholder="DD/MM/YY" required>
+									<div class="input_icon"></div>
+								</div>
+								<div class="code">
+									<label for="code">Code</label>
+									<input type="password" name="code" id="code" pattern="\d{3}" required>
+									<div class="input_icon"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form_bottom">
+					<input type="checkbox" name="checkBottom" id="check" >
+					<label for="check">I agree to the <a href="#"> Terms & Conditions</a></label>
+					<button class="order_btn btn">Place order</button>
+					<button class="btn">print a quote</button>
+				</div>
+
+			</form>
+		</div>
+
+	</div>
+	
+
+
+</body>
+</html>

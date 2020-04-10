@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg 
+	version="1.1" 
+	id="master-artboard" 
+	xmlns="http://www.w3.org/2000/svg" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	viewBox="0 0 38 38" 
+	x="0px" 
+	y="0px" 
+	style="enable-background:new 0 0 38 38; fill:#d6d8e2" 
+	
+	>
+	<defs><style id="ee-google-fonts">@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);</style></defs>
+
+
+<rect id="ee-background" x="0" y="0" width="38" height="38" style="fill: white; fill-opacity: 0; pointer-events: none;"/><g transform="matrix(0.3799998788674489, 0, 0, 0.3799998788674489, -228.7599169319024, -17.479993222297534)"><g id="g-5" transform="matrix(1, 0, 0, 1, 0, 0)">
+	<g id="g-6">
+		<path class="st0" d="M652,46c27.6,0,50,22.4,50,50s-22.4,50-50,50s-50-22.4-50-50S624.4,46,652,46z" style="fill: rgb(214, 216, 226);"/>
+	</g>
+</g></g></svg>
